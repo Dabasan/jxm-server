@@ -49,7 +49,7 @@ public class JXMServerMain {
 	public void instantiate_BD1Manipulator(String filepath) throws IOException {
 		bd1Server.instantiate(filepath);
 	}
-	public void loadBlocksToLists() {
+	public void loadBlocksToLists_BD1Manipulator() {
 		bd1Server.loadBlocksToLists();
 	}
 	public List<Double> getVertexPositionsList_BD1Manipulator() {
@@ -64,8 +64,8 @@ public class JXMServerMain {
 	public List<Boolean> getEnabledFlagsList_BD1Manipulator() {
 		return bd1Server.getEnabledFlagsList();
 	}
-	public void setBlocksAsLists(List<Double> vertexPositionsList, List<Double> uvsList,
-			List<Integer> textureIDsList, List<Boolean> enabledFlagsList) {
+	public void setBlocksAsLists_BD1Manipulator(List<Double> vertexPositionsList,
+			List<Double> uvsList, List<Integer> textureIDsList, List<Boolean> enabledFlagsList) {
 		bd1Server.setBlocksAsLists(vertexPositionsList, uvsList, textureIDsList, enabledFlagsList);
 	}
 	public int getNumBlocks_BD1Manipulator() {
